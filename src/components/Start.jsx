@@ -12,7 +12,7 @@ export const Start = () => {
         <div className='container-start'>
             <div className='container-start-text'>
                 <h1 className='tittle-hello'>Hola!, Soy Luisa</h1>
-                <h1 className='tittle-dw'>Desarrolladora Web</h1>
+                <h1 className='tittle-dw animated-gradient'>Desarrolladora Web</h1>
                 <p>Me apasiona crear sitios web funcionales y atractivos, enfocados en ofrecer una experiencia única a los usuarios.</p>
                 <div className='container-start-btn'>
                     <IconButton

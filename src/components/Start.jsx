@@ -32,8 +32,8 @@ export const Start = () => {
                     />
                 </div>
             </div>
-            <div className='container-start-img'>
-                <img src={imgPerson} alt="Luisa Ramirez" className='img-person'/>
+            <div className='container-start-img '>
+                <img src={imgPerson} alt="Luisa Ramirez" className='img-person '/>
             </div>
         </div>
     </>

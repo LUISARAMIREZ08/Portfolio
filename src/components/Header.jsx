@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <>
         <div className='Header'>
-            <div className='Container-name-menu'>
+            <div className='Container-name-menu '>
                 <div className='Name'>
                     <span>Luisa Ramirez</span>
                 </div>
@@ -19,7 +19,7 @@ export const Header = () => {
                 </div>
             </div>
             <div>
-            <img src={moonIcon} alt="Modo oscuro" className='Icon'/>
+            <img src={moonIcon} alt="Modo oscuro" className='Icon '/>
             </div>
         </div>
     </>

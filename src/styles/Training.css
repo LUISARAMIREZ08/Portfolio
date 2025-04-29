@@ -1,0 +1,31 @@
+.container-training {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-training-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(21, 5, 53, 0.4);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    border: solid 1px #7A4EDD;
+    gap: 1rem;
+    width: 40%;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-training-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+}

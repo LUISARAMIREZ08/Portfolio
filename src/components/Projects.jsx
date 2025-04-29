@@ -15,7 +15,7 @@ export const Projects = () => {
             <div className='container-projects-card'>
                 <img src={card} alt="vector" className='img-card'/>
                 <div className='container-text-card'>
-                <div className='container-text-img-card'>
+                    <div className='container-text-img-card'>
                         <h3 className='tittle-card'>Proyecto 1</h3>
                         <ArrowIcon className='img-arrow'/>
                     </div>

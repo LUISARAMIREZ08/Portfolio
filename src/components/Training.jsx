@@ -1,0 +1,59 @@
+import React from 'react'
+import '../styles/training.css'
+import project from '../assets/project.svg' 
+
+export const Training = () => {
+  return (
+    <>
+        <div className='container-training'>
+            <div className='container-projects-text'>
+                <img src={project} alt="vector" className='Icon'/>
+                <h2 className='tittle-projects'>Formación</h2>
+            </div>
+            <div className='container-training-cards'>
+                <div className='container-training-card'>
+                    <h3 className='tittle-card'>Ingeniería de Sistemas y Computacion</h3>
+                    <p className='text-card'>
+                        <small>
+                            Universidad Tecnológica de Pereira
+                        </small>
+                    </p>
+                    <p className='text-card'>
+                        <small>
+                            2020 - Present
+                        </small>
+                    </p>
+                </div>
+                <div className='container-training-card'>
+                    <h3 className='tittle-card'>Programacion Junior Full-Stack</h3>
+                    <p className='text-card'>
+                        <small>
+                            Universidad Tecnológica de Pereira
+                        </small>
+                    </p>
+                    <p className='text-card'>
+                        <small>
+                            2024
+                        </small>
+                    </p>
+                </div>
+                <div className='container-training-card'>
+                    <h3 className='tittle-card'>Técnico en Sistemas</h3>
+                    <p className='text-card'>
+                        <small>
+                            SENA                    
+                        </small>
+                    </p>
+                    <p className='text-card'>
+                        <small>
+                            2017 - 2018
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default Training

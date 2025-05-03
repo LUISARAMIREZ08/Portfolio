@@ -7,7 +7,7 @@ import ArrowIcon from '../assets/arrow.svg?react'
 export const Projects = () => {
   return (
     <>
-        <div className='container-projects'>
+        <div className='container-projects' id='projects'>
             <div className='container-projects-text'>
                 <img src={project} alt="vector" className='Icon'/>
                 <h2 className='tittle-projects'>Proyectos</h2>

@@ -16,7 +16,7 @@ import csharpIcon from '../assets/csharp.svg'
 export const Tecnologies = () => {
   return (
     <> 
-        <div className='container-tecnologies'>
+        <div className='container-tecnologies' id='tecnologies'>
             <div className='line'></div>
             <div className='container-tecnologies-text'>
                 <img src={vector} alt="vector" className='Icon'/>

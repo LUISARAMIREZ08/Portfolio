@@ -9,7 +9,7 @@ import CV from '../assets/cv.svg'
 export const Start = () => {
   return (
     <>
-        <div className='container-start'>
+        <div className='container-start' id='start'>
             <div className='container-start-text'>
                 <h1 className='tittle-hello'>Hola!, Soy Luisa</h1>
                 <h1 className='tittle-dw animated-gradient'>Desarrolladora Web</h1>
@@ -18,17 +18,22 @@ export const Start = () => {
                     <IconButton
                         iconSrc={mail} 
                         label="Contáctame"
-                        onClick={() => alert('Curriculum')}
+                        onClick={() => {
+                            const section = document.getElementById('contact')
+                            if (section) {
+                              section.scrollIntoView({ behavior: 'smooth' })
+                            }
+                          }}
                     />
                     <IconButton
                         iconSrc={CV} 
                         label="CV"
-                        onClick={() => alert('Curriculum')}
+                        onClick={() => window.open('/CV_LuisaRamirez.pdf', '_blank')}
                     />
                     <IconButton
                         iconSrc={github} 
                         label="GitHub"
-                        onClick={() => alert('Curriculum')}
+                        onClick={() => window.open('https://github.com/LUISARAMIREZ08', '_blank')}
                     />
                 </div>
             </div>

@@ -5,7 +5,7 @@ import project from '../assets/project.svg'
 export const Training = () => {
   return (
     <>
-        <div className='container-training'>
+        <div className='container-training' id='training'>
             <div className='container-projects-text'>
                 <img src={project} alt="vector" className='Icon'/>
                 <h2 className='tittle-projects'>Formación</h2>
@@ -20,7 +20,7 @@ export const Training = () => {
                     </p>
                     <p className='text-card'>
                         <small>
-                            2020 - Present
+                            2020 - Presente
                         </small>
                     </p>
                 </div>

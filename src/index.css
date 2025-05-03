@@ -4,7 +4,11 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding-top: 7rem;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}

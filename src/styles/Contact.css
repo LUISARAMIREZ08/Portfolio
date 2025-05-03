@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    padding-block: 4rem;
 }
 
 .text-contact {
@@ -63,6 +63,5 @@
 
 .form-contact button:hover {
     background-color: #7A4EDD;
-    transform: scale(1.02);
 }
 

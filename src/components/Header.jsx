@@ -6,21 +6,20 @@ export const Header = () => {
   return (
     <>
         <div className='Header'>
-            <div className='Container-name-menu '>
+            <div className='Container-name-menu'>
                 <div className='Name'>
-                    <span>Luisa Ramirez</span>
+                <span>Luisa Ramirez</span>
                 </div>
                 <div className='Menu'>
-                    <a>Inicio</a>
-                    <a>Tecnologías</a>
-                    <a>Proyectos</a>
-                    <a>Sobre mí</a>
-                    <a>Formación</a>
+                <a href='#start'>Inicio</a>
+                <a href='#tecnologies'>Tecnologías</a>
+                <a href='#projects'>Proyectos</a>
+                <a href='#about'>Sobre mí</a>
+                <a href='#training'>Formación</a>
                 </div>
             </div>
-            <div>
-            <img src={moonIcon} alt="Modo oscuro" className='Icon '/>
-            </div>
+            
+            <img src={moonIcon} alt="Modo oscuro" className='Icon'/>
         </div>
     </>
   )

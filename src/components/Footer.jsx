@@ -9,13 +9,17 @@ export const Footer = () => {
         <footer className='footer'>
             <div className='container-footer'>
                 <div className='container-contact-links'>
-                <div class="icon-container">
-                    <Github className="img-link" />
-                    <span class="tooltip">GitHub</span>
+                <div className="icon-container">
+                    <a href='https://github.com/LUISARAMIREZ08' target="_blank" rel="noopener noreferrer">
+                        <Github className="img-link" />
+                        <span className="tooltip">GitHub</span>
+                    </a>
                 </div>
-                <div class="icon-container">
-                    <Cv2 className="img-link" />
-                    <span class="tooltip">CV</span>
+                <div className="icon-container">
+                    <a href="/CV_LuisaRamirez.pdf" target="_blank" rel="noopener noreferrer">
+                        <Cv2 className="img-link" />
+                        <span className="tooltip">CV</span>
+                    </a>
                 </div>
                 </div>
                 <div className='container-footer-text'>

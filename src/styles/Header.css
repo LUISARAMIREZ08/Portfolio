@@ -1,16 +1,20 @@
 body{
-    background-color: #09001F;;
+    background-color: #09001F;
 }
 
 .Header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem;
     color: white;
     text-align: center;
-    margin: 2rem;
-    margin-top: 3rem;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: rgba(9, 0, 31, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 2rem 8rem; /* Ajusta estos valores */
+    box-sizing: border-box; /* Esto incluye el padding dentro del tamaño total */
 }
 
 .Container-name-menu{

@@ -4,7 +4,7 @@ import project from '../assets/project.svg'
 export const About = () => {
   return (
     <>
-        <div className='container-about'>
+        <div className='container-about' id='about'>
             <div className='container-projects-text'>
                 <img src={project} alt="vector" className='Icon'/>
                 <h2 className='tittle-projects'>Sobre mí</h2>

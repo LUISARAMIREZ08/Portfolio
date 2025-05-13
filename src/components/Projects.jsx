@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/projects.css'
-import project from '../assets/project.svg'
+import Project from '../assets/Projects.svg?react'
 import card from '../assets/card.svg'
 import ArrowIcon from '../assets/arrow.svg?react'
 
@@ -9,7 +9,7 @@ export const Projects = () => {
     <>
         <div className='container-projects' id='projects'>
             <div className='container-projects-text'>
-                <img src={project} alt="vector" className='Icon'/>
+                <Project className='Icon-title'/>
                 <h2 className='tittle-projects'>Proyectos</h2>
             </div>
             <div className='container-projects-card'>

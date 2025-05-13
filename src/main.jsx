@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { ThemeProvider } from './components/ThemeContext'
 import './index.css'
 import { Header } from './components/Header.jsx'
 import { Start } from './components/Start.jsx'
@@ -13,14 +14,16 @@ import GradientCursor from './components/GradientCursor.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Header/>
-    <Start/>
-    <Tecnologies/>
-    <Projects/>
-    <About/>
-    <Training/>
-    <Contact/>
-    <Footer/>
-    <GradientCursor/>
+    <ThemeProvider>
+      <Header/>
+      <Start/>
+      <Tecnologies/>
+      <Projects/>
+      <About/>
+      <Training/>
+      <Contact/>
+      <Footer/>
+      <GradientCursor/>
+    </ThemeProvider>
   </StrictMode>,
 )

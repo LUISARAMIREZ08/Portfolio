@@ -28,11 +28,11 @@
 }
 
 .text-footer-by {
-    color: white;
+    color: #8D5CFF;
     font-size: 0.8rem;
 }
 .text-footer-name {
-    color: #8D5CFF;
+    color: white;
     font-size: 0.8rem;
 }
 
@@ -58,4 +58,14 @@
 
 .icon-container:hover .tooltip {
     opacity: 1;
+}
+
+/* Light mode */
+body.light .text-footer-by {
+    color: white;
+}
+
+body.light .text-footer-name {
+    color: #2F0099;
+    font-weight: 500;
 }

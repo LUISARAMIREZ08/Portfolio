@@ -1,9 +1,7 @@
 import React, { useRef } from 'react'
-import project from '../assets/project.svg'  
+import Mail from '../assets/contact.svg?react'  
 import '../styles/contact.css'
 import emailjs from '@emailjs/browser'
-import Github from '../assets/github2.svg?react'
-import Cv2 from '../assets/cv2.svg?react'
 
 export const Contact = () => {
     const form = useRef()
@@ -12,10 +10,10 @@ export const Contact = () => {
       e.preventDefault()
   
       emailjs.sendForm(
-        'service_w1xsb9h',       // <-- Reemplaza con tu Service ID
-        'template_pdqxub7',      // <-- Reemplaza con tu Template ID
+        'service_w1xsb9h',       // <-- Service ID
+        'template_pdqxub7',      // <-- Template ID
         form.current,
-        'EU0Q0nmhSDI5adb-d'       // <-- Tu public key de EmailJS
+        'EU0Q0nmhSDI5adb-d'      // <-- Public key de EmailJS
       )
       .then((result) => {
           console.log(result.text)
@@ -30,7 +28,7 @@ export const Contact = () => {
     return (
       <div className='container-contact' id='contact'>
         <div className='container-projects-text'>
-          <img src={project} alt="vector" className='Icon'/>
+          <Mail className='Icon-title'/>
           <h2 className='tittle-projects'>Contáctame</h2>
         </div>
         <p className='text-contact'>
@@ -39,7 +37,7 @@ export const Contact = () => {
         <div className='container-contact-form'>
           <form ref={form} onSubmit={sendEmail} className='form-contact'>
             <input type="text" name="name" placeholder="Nombre" className="input-contact" required />
-            <input type="email" name="email" placeholder="User@mail.com" className="input-contact" required />
+            <input type="email" name="email" placeholder="Correo Electrónico" className="input-contact" required />
             <textarea name="message" placeholder="Me interesa trabajar contigo!!" className="textarea-contact" required></textarea>
             <button type="submit" className="btn-submit">Enviar</button>
           </form>

@@ -3,13 +3,15 @@ import IconButton from './IconButton'
 import '../styles/start.css'
 import imgPerson from '../assets/person.svg'
 import mail from '../assets/mail.svg'
-import github from '../assets/git.svg'
+import github from '../assets/GitHub.svg'
 import CV from '../assets/cv.svg'
+import { useTheme } from './ThemeContext'
 
 export const Start = () => {
+
   return (
     <>
-        <div className='container-start' id='start'>
+        <div className="container-start" id='start'>
             <div className='container-start-text'>
                 <h1 className='tittle-hello'>Hola!, Soy Luisa</h1>
                 <h1 className='tittle-dw animated-gradient'>Desarrolladora Web</h1>

@@ -11,3 +11,8 @@
     margin: 0;
     width: 50%;
 }
+
+/* Light mode */
+body.light .text-about {
+    color: #100033;
+}

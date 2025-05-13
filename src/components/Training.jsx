@@ -1,13 +1,13 @@
 import React from 'react'
 import '../styles/training.css'
-import project from '../assets/project.svg' 
+import School from '../assets/school.svg?react' 
 
 export const Training = () => {
   return (
     <>
         <div className='container-training' id='training'>
             <div className='container-projects-text'>
-                <img src={project} alt="vector" className='Icon'/>
+                <School className='Icon-title'/>
                 <h2 className='tittle-projects'>Formación</h2>
             </div>
             <div className='container-training-cards'>

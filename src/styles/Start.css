@@ -46,7 +46,6 @@
 .tittle-dw{
     font-size: 3rem;
     font-weight: bold;
-    color: #8D5CFF;
     margin: 0;
 }
 .container-start-btn{
@@ -87,5 +86,33 @@
 
 .container-start-img img{
     width: 85%; 
+}
+
+
+/* Light mode */
+body.light .container-start-text p {
+    color: #160047;
+  }
+  
+body.light .tittle-hello {
+    color: #3B00C2;
+}
+
+body.light .animated-gradient{
+    background: linear-gradient(45deg, #3B00C2, #eb91eb, #6807d8, #ce80b5);
+    background-size: 300% 300%;
+    animation: gradientShift 8s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+    -webkit-text-fill-color: transparent; 
+}
+  
+body.light .container-start-btn button {
+    background-color: #B18FFF;
+    color: #220070;
+}
+body.light .container-start-btn button:hover {
+    background-color: #8D5CFF;
 }
 

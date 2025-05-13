@@ -7,6 +7,12 @@
     padding-block: 5rem;
 }
 
+svg{
+    width: 2rem;
+    height: 2rem;
+    fill: #B18FFF;
+}
+
 .container-projects-text{
     display: flex;
     flex-direction: row;
@@ -27,7 +33,7 @@
 
 .img-arrow{
     height: 1rem;
-    fill: #D4C2FF ;
+    fill: #D4C2FF;
     transition: all 0.3s ease-in-out; 
 }
 
@@ -39,6 +45,7 @@
     padding: 1rem;
     gap: 3rem;
     width: 50%;
+    border-radius: 10px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -102,5 +109,31 @@
 }
 
 .container-btn-card button:hover{
+    background-color: #8D5CFF;
+}
+
+/* Light mode */
+body.light .container-projects-text{
+    color: #2F0099;
+}
+
+body.light .container-projects-card{
+    background-color: rgba(33, 9, 82, 0.1);
+    border: 1px solid rgba(16, 10, 49, 0.1);
+}
+
+body.light .tittle-card{
+    color: #2F0099;
+}
+
+body.light .text-card{
+    color: #160047;
+}
+
+body.light .container-btn-card button{
+    background-color: #B18FFF;
+    color: #220070;
+}
+body.light .container-btn-card button:hover{
     background-color: #8D5CFF;
 }

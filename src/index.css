@@ -6,6 +6,12 @@ body {
   margin: 0;
   padding-top: 7rem;
   box-sizing: border-box;
+  background-color: #09001F;
+  transition: 0.5s ease, color 0.5s ease;
+}
+
+body.light{
+    background-color: #D4C2FF;
 }
 
 html {

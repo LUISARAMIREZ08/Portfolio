@@ -101,7 +101,7 @@ body.light .Icon2 {
 }
 
 /* RESPONSIVE DESIGN */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .Menu {
     display: none;
     flex-direction: column;
@@ -110,7 +110,6 @@ body.light .Icon2 {
     left: 0;
     width: 100%;
     background-color: rgba(9, 0, 31, 0.95);
-    padding: 1.5rem 2rem;
     z-index: 10;
     animation: fadeIn 0.3s ease;
     text-align: left;
@@ -163,7 +162,7 @@ body.light .Icon2 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .MenuIcon {
     display: block;
   }
@@ -171,18 +170,21 @@ body.light .Icon2 {
   .Menu {
     display: none;
     flex-direction: column;
+  
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background-color: rgba(9, 0, 31, 0.95);
-    padding: 1rem 2rem;
+    
     z-index: 10;
     animation: fadeIn 0.3s ease;
   }
 
   .Menu.open {
     display: flex;
+    align-items: center;
+    margin:0;
   }
 
   .Menu a {

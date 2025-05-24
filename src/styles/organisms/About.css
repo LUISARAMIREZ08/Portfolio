@@ -38,3 +38,9 @@ body.light .text-about {
     color: #100033;
 }
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px){
+    .text-about {
+        width: 90%;
+    }
+}   

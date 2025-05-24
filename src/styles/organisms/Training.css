@@ -49,6 +49,14 @@ body.light .container-training-cards {
     border: 1px solid rgba(16, 10, 49, 0.1);
 }
 
+body.light .title-card-training {
+    color: #220070;
+}
+
+body.light .text-card-training {
+    color: #160047;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 1400px){
     .container-training-cards{

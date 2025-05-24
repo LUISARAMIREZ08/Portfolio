@@ -6,11 +6,12 @@
     text-align: center;
     top: 0;
     position: fixed;
+    z-index: 1;
     width: 100%;
     background: rgba(9, 0, 31, 0.6);
     backdrop-filter: blur(10px);
     padding: 2% 4%;
-    box-sizing: border-box; /* Esto incluye el padding dentro del tamaño total */
+    box-sizing: border-box; 
     transition: 0.5s ease, color 0.5s ease;
 }
 
@@ -61,7 +62,6 @@
     transform: translateY(-3px) rotate(10deg);
 }
 
-/* Ícono del menú hamburguesa */
 .MenuIcon {
   display: none;
   width: 2rem;
@@ -69,7 +69,6 @@
   cursor: pointer;
 }
 
-/* Contenedor para íconos de tema y menú */
 .Header-icons {
   display: flex;
   gap: 1rem;
@@ -101,6 +100,7 @@ body.light .Icon2 {
     transition: 0.3s ease, fill 0.3s ease;
 }
 
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 1024px) {
   .Menu {
     display: none;
@@ -145,7 +145,6 @@ body.light .Icon2 {
     gap: 1rem;
   }
 
-  /* Alinea verticalmente íconos y nombre */
   .Header {
     flex-direction: row;
     padding: 1.5rem 2rem;
@@ -164,8 +163,6 @@ body.light .Icon2 {
   }
 }
 
-
-/* Responsive para móviles */
 @media screen and (max-width: 768px) {
   .MenuIcon {
     display: block;

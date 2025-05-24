@@ -116,7 +116,7 @@ body.light .container-start-btn button:hover {
     background-color: #8D5CFF;
 }
 
-/* Responsive para tablets (<= 1024px) */
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 1024px) {
   .container-start {
     flex-direction: column;
@@ -147,7 +147,6 @@ body.light .container-start-btn button:hover {
   }
 }
 
-/* Responsive para móviles (<= 768px) */
 @media screen and (max-width: 768px) {
   .tittle-hello {
     font-size: 1.5rem;

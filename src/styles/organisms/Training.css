@@ -31,9 +31,57 @@
     gap: 0.5rem;
 }
 
+.title-card-training{
+    font-size: 1.2rem;
+    color: #D4C2FF;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-card-training{
+    color: white;
+    margin: 0;
+}
+
 /* Light mode */
 body.light .container-training-cards {
     background-color: rgba(33, 9, 82, 0.1);
     border: 1px solid rgba(16, 10, 49, 0.1);
 }
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 1400px){
+    .container-training-cards{
+        width: 60%;
+    }
+    .title-card-training{
+        font-size: 1.2rem;
+    }
+    .text-card-training{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 783px){
+    .container-training-cards{
+        width: 70%;
+    }
+    .title-card-training{
+        font-size: 1rem;
+    }
+    .text-card-training{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 592px){
+    .container-training-cards{
+        width: 80%;
+    }
+    .title-card-training{
+        font-size: 0.8rem;
+    }
+    .text-card-training{
+        font-size: 0.7rem;
+    }
+}

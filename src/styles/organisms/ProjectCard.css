@@ -91,7 +91,7 @@
     gap: 1rem;
 }
 
-.tittle-card{
+.title-card{
     font-size: 1.5rem;
     color: #D4C2FF;
     margin: 0;
@@ -99,7 +99,6 @@
 }
 
 .text-card{
-   
     color: white;
     margin: 0;
 }

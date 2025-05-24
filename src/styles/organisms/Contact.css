@@ -9,6 +9,7 @@
 .text-contact {
     color: white;
     margin: 0;
+    padding-inline:2rem ;
 }
 
 .container-contact-form {
@@ -16,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 900px;
     padding: 1rem;
 }
 
@@ -82,4 +83,16 @@ body.light .form-contact input:focus,
 body.light .form-contact textarea:focus {
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid #8D5CFF;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .container-contact-form {
+        width: 100%;
+    }
+    .form-contact input,
+    .form-contact textarea {
+        width: 60%;
+    }
 }

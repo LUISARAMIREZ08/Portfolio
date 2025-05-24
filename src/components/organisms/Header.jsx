@@ -3,6 +3,7 @@ import '../../styles/organisms/header.css'
 import moonIcon from '../../assets/utilsIcons/moon.svg'
 import sunIcon from '../../assets/utilsIcons/light.svg'
 import menuIcon from '../../assets/utilsIcons/menu.svg' 
+import menuWhite from '../../assets/utilsIcons/menuWhite.svg'
 import closeIcon from '../../assets/utilsIcons/close.svg' 
 import { useTheme } from '../utils/ThemeContext'
 
@@ -34,7 +35,11 @@ export const Header = () => {
                 onClick={toggleTheme}
               />
               <img
-                src={menuOpen ? closeIcon : menuIcon}
+                src={menuOpen
+                  ? closeIcon
+                  : theme === 'dark'
+                    ? menuWhite
+                    : menuIcon}
                 alt="Menú"
                 className="MenuIcon"
                 onClick={toggleMenu}

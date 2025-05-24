@@ -30,7 +30,7 @@
     border: 1px solid rgba(16, 10, 49, 0.1);
 }
 
-.container-projects-card:hover .tittle-card{
+.container-projects-card:hover .title-card{
     color: #8D5CFF;
 }
 .container-projects-card:hover .img-arrow{
@@ -43,6 +43,11 @@
     gap: 2rem;
     text-decoration: none;
     color: inherit;
+    padding: 5px;
+}
+
+.card-link.reverse {
+  flex-direction: row-reverse;
 }
 
 .container-text-img-card{
@@ -69,6 +74,18 @@
     padding: 2rem;
     background: linear-gradient(to bottom right, #ffffff, #8eb8f7);
 }
+
+.container-card-img-project-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 2rem;
+    background: linear-gradient(to bottom right, #ffffff, #81cc87);
+}
+
 
 .container-projects-card img{
     width: 90%;
@@ -193,6 +210,11 @@ body.light .container-btn-card-2 button{
         height: 250px;
         padding: 1rem;
     }
+    .container-card-img-project-2{
+        width: 100%;
+        height: 250px;
+        padding: 1rem;
+    }
     .container-text-card{
         gap:0.2rem;
     }
@@ -233,6 +255,11 @@ body.light .container-btn-card-2 button{
         width: 100%;
     }
     .container-card-img-project{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
+    .container-card-img-project-2{
         width: 100%;
         height: 200px;
         padding: 1rem;
@@ -280,6 +307,11 @@ body.light .container-btn-card-2 button{
         height: 200px;
         padding: 1rem;
     }
+    .container-card-img-project-2{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
     .container-text-card{
         gap:0.2rem;
     }
@@ -308,6 +340,11 @@ body.light .container-btn-card-2 button{
         height: 200px;
         padding: 1rem;
     }
+    .container-card-img-project-2{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -316,6 +353,11 @@ body.light .container-btn-card-2 button{
         padding: 1rem;
     }
     .card-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-link.reverse {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -331,6 +373,11 @@ body.light .container-btn-card-2 button{
         height: 150px;
     }
     .container-card-img-project{
+        width: 95%;
+        height: 180px;
+        padding: 1rem;
+    }
+    .container-card-img-project-2{
         width: 95%;
         height: 180px;
         padding: 1rem;

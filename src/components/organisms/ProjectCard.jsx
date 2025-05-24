@@ -2,22 +2,19 @@ import { useState } from 'react'
 import ArrowIcon from '../../assets/utilsIcons/arrow.svg?react'
 import ButtonTech from '../atoms/ButtonTech'
 
-const ProjectCard = ({ title, description, image, stack, stack2, href }) => {
+const ProjectCard = ({ title, description, image, stack, stack2, href, container, reverse = false}) => {
   const [showText, setShowText] = useState(false)
   const toggleText = () => setShowText(!showText)
   return (
     <div className='container-projects-card'>
-        <a href={href} target="_blank" rel="noopener noreferrer" className="card-link">
-      <div className='container-card-img-project'>
+        <a href={href} target="_blank" rel="noopener noreferrer" className={`card-link ${reverse ? 'reverse' : ''}`}>
+      <div className={container}>
         <img src={image} alt="preview" className='img-card' />
       </div>
       <div className='container-text-card'>
         <div className='container-text-img-card'>
           <h3 className='title-card'>{title}</h3>
           <ArrowIcon className='img-arrow' />
-        </div>
-
-        {/* Botón que solo se muestra en pantallas pequeñas */}
           <button
             className='btn-toggle-text'
             onClick={(e) => {
@@ -27,6 +24,10 @@ const ProjectCard = ({ title, description, image, stack, stack2, href }) => {
           >
             {showText ? 'Ocultar' : 'Ver descripción'}
           </button>
+        </div>
+
+        {/* Botón que solo se muestra en pantallas pequeñas */}
+          
 
           {/* Texto condicional */}
           <p className={`text-card ${showText ? 'show' : 'hide'}`}>

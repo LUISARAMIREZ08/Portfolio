@@ -4,6 +4,7 @@ import '../../styles/molecules/sectionTitle.css'
 import SectionTitle from '../molecules/SectionTitle'
 import ProjectCard from './ProjectCard'
 import task from '../../assets/images/task.png'
+import VitalFood from '../../assets/images/VitalFood.png'
 import Project from '../../assets/titleIcons/Projects.svg?react'
 
 export const Projects = () => {
@@ -17,6 +18,18 @@ export const Projects = () => {
             image={task}
             stack={['Python', 'Django', 'HTML', 'CSS']}
             stack2={['Frontend', 'Backend']}
+            container="container-card-img-project"
+            reverse={false}
+        />
+        <ProjectCard
+            href="https://www.figma.com/proto/jz0mewJoPNa5Qq785fBhf6/App-Comida-Saludable?node-id=84-208&starting-point-node-id=41%3A26&t=jGNELmakzU9E0fSI-1 "
+            title="VitalFood"
+            description="Este prototipo lo hice en Figma aplicando mis conocimientos en diseño UX/UI. Quise crear una app sencilla y útil, con recetas saludables. Fue una gran oportunidad para seguir mejorando en la creación de interfaces claras y fáciles de usar."
+            image={VitalFood}
+            stack={['Figma' , 'Wireframes', 'Prototipos']}
+            stack2={['Diseño UX/UI']}
+            container="container-card-img-project-2"
+            reverse={true}
         />
     </section>
   )

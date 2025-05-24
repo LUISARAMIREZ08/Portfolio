@@ -1,0 +1,15 @@
+.container-title-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #B18FFF;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+/* Light mode */
+body.light .container-title-text{
+    color: #2F0099;
+}

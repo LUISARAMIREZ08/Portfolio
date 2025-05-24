@@ -1,28 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ThemeProvider } from './components/ThemeContext'
 import './index.css'
-import { Header } from './components/Header.jsx'
-import { Start } from './components/Start.jsx'
-import { Tecnologies } from './components/Tecnologies.jsx'
-import { Projects } from './components/Projects.jsx'
-import { About } from './components/About.jsx'
-import { Training } from './components/Training.jsx'
-import { Contact } from './components/Contact.jsx'
-import { Footer } from './components/Footer.jsx'
-import GradientCursor from './components/GradientCursor.jsx'
+import GradientCursor from './components/utils/GradientCursor.jsx'
+import { ThemeProvider } from './components/utils/ThemeContext'
+import FrontPage from './components/pages/FrontPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>
-      <Header/>
-      <Start/>
-      <Tecnologies/>
-      <Projects/>
-      <About/>
-      <Training/>
-      <Contact/>
-      <Footer/>
+      <FrontPage/>
       <GradientCursor/>
     </ThemeProvider>
   </StrictMode>,

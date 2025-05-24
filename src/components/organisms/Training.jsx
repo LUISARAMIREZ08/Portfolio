@@ -1,15 +1,12 @@
-import React from 'react'
-import '../styles/training.css'
-import School from '../assets/school.svg?react' 
+import '../../styles/organisms/training.css'
+import SectionTitle from '../molecules/SectionTitle'
+import School from '../../assets/titleIcons/school.svg?react' 
 
 export const Training = () => {
   return (
     <>
         <div className='container-training' id='training'>
-            <div className='container-projects-text'>
-                <School className='Icon-title'/>
-                <h2 className='tittle-projects'>Formación</h2>
-            </div>
+            <SectionTitle Icon={School} title="Formación" />
             <div className='container-training-cards'>
                 <div className='container-training-card'>
                     <h3 className='tittle-card'>Ingeniería de Sistemas y Computacion</h3>

@@ -41,7 +41,6 @@ svg{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 1rem;
 }
 
 .container-tecnologies-icons-text{
@@ -73,4 +72,38 @@ body.light .container-tecnologies-text{
 
 body.light .container-tecnologies-icons-text h4{
     color: #160047;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-tecnologies-icons {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-tecnologies {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
+  .container-tecnologies-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .container-tecnologies-icons-text h4 {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .line {
+    margin: 1rem 0;
+  }
 }

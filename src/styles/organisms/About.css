@@ -1,0 +1,40 @@
+.container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+.container-text-img-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.text-about {
+    color: white;
+    margin: 0;
+    width: 60%;
+}
+
+.container-img-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-about{
+    width: 50%;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* Light mode */
+body.light .text-about {
+    color: #100033;
+}
+

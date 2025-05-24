@@ -1,0 +1,311 @@
+
+.container-projects-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 3rem;
+    width: 60%;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-toggle-text {
+    display: none;
+    background-color: rgba(106, 41, 255, 0.5);
+    color: white;
+    padding: 0.4rem 1rem;
+    font-size: 0.6rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.container-projects-card:hover{
+    background-color: rgba(33, 9, 82, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(16, 10, 49, 0.1);
+}
+
+.container-projects-card:hover .tittle-card{
+    color: #8D5CFF;
+}
+.container-projects-card:hover .img-arrow{
+    fill: #8D5CFF;
+    transform: translateX(3px) translateY(-3px);
+}
+
+.card-link {
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-text-img-card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 1rem;
+}
+
+.img-arrow{
+    height: 1rem;
+    fill: #D4C2FF;
+    transition: all 0.3s ease-in-out; 
+}
+
+.container-card-img-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 2rem;
+    background: linear-gradient(to bottom right, #ffffff, #8eb8f7);
+}
+
+.container-projects-card img{
+    width: 90%;
+    border-radius: 8px;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    transition: transform 0.5s ease;
+}
+
+.container-projects-card img:hover {
+    transform: scale(1.1);
+}
+
+.container-text-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 1rem;
+}
+
+.tittle-card{
+    font-size: 1.5rem;
+    color: #D4C2FF;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-card{
+   
+    color: white;
+    margin: 0;
+}
+
+.container-btn-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.container-btn-card button{
+    font-family: 'Poppins', sans-serif;
+    background-color: #B18FFF;
+    color: #220070;
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-btn-card button:hover{
+    background-color: #8D5CFF;
+}
+
+.container-btn-card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.container-btn-card-2 button{
+    font-family: 'Poppins', sans-serif;
+    background-color: #160047;
+    color: #3B00C2;
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Light mode */
+body.light .container-projects-card{
+    background-color: rgba(33, 9, 82, 0.1);
+    border: 1px solid rgba(16, 10, 49, 0.1);
+}
+
+body.light .tittle-card{
+    color: #2F0099;
+}
+
+body.light .text-card{
+    color: #160047;
+}
+
+body.light .container-btn-card button{
+    background-color: #B18FFF;
+    color: #220070;
+}
+body.light .container-btn-card button:hover{
+    background-color: #8D5CFF;
+}
+
+body.light .container-btn-card-2 button{
+    background-color: #6A29FF;
+    color: #D4C2FF;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .container-projects-card{
+        width: 70%;
+        padding: 1rem;
+    }
+    .card-link{
+        display: flex;
+        align-items: center;
+
+    }
+    .container-text-img-card{
+        gap: 1rem;
+    }
+    .container-btn-card{
+        gap: 0.5rem;
+    }
+    .container-projects-card img{
+        width: 100%;
+    }
+    .container-card-img-project{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
+    .container-text-card{
+        gap:0.2rem;
+    }
+    .tittle-card{
+        font-size: 1.2rem;
+    }
+    .text-card{
+        font-size: 0.8rem;
+    }
+
+    .container-btn-card button{
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
+    }
+    .container-btn-card-2 button{
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 570px) {
+    .container-projects-card{
+        width: 80%;
+        padding: 1rem;
+    }
+    .card-link{
+        display: flex;
+        align-items: center;
+    }
+    .container-text-img-card{
+        gap: 1rem;
+    }
+    .container-btn-card{
+        gap: 0.5rem;
+    }
+    .container-projects-card img{
+        width: 100%;
+    }
+    .container-card-img-project{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
+    .container-text-card{
+        gap:0.2rem;
+    }
+}
+
+@media screen and (max-width: 570px) and (min-width: 480px){
+    .container-projects-card{
+        width: 90%;
+        padding: 1rem;
+    }
+    .card-link{
+        display: flex;
+        align-items: center;
+    }
+    .container-text-img-card{
+        gap: 1rem;
+    }
+    .container-btn-card{
+        gap: 0.5rem;
+    }
+    .container-projects-card img{
+        width: 100%;
+    }
+    .container-card-img-project{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container-projects-card{
+        width: 80%;
+        padding: 1rem;
+    }
+    .card-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-text-img-card{
+        gap: 1rem;
+    }
+    .container-btn-card{
+        gap: 0.5rem;
+    }
+    .container-projects-card img{
+        width: 100%;
+        height: 150px;
+    }
+    .container-card-img-project{
+        width: 95%;
+        height: 180px;
+        padding: 1rem;
+    }
+    .btn-toggle-text {
+    display: inline-block;
+    }
+
+    .text-card {
+      display: none;
+    }
+
+    .text-card.show {
+      display: block;
+    }
+}

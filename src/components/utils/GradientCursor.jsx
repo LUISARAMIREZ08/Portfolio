@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/gradientCursor.css'; 
+import { useState, useEffect } from 'react';
+import '../../styles/gradientCursor.css'; 
 
 const GradientCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

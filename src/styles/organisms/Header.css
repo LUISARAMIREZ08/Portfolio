@@ -1,0 +1,209 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-align: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: rgba(9, 0, 31, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 2% 4%;
+    box-sizing: border-box; /* Esto incluye el padding dentro del tamaño total */
+    transition: 0.5s ease, color 0.5s ease;
+}
+
+.Container-name-menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.Name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nameLink{
+    text-decoration: none;
+    color: #8D5CFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.Menu{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.Menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: medium;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.Menu a:hover{
+    color: #4A00F5;
+    transition: color 0.3s ease;
+}
+
+.Icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s ease, fill 0.3s ease;
+}
+
+.Icon:hover {
+    transform: translateY(-3px) rotate(10deg);
+}
+
+/* Ícono del menú hamburguesa */
+.MenuIcon {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/* Contenedor para íconos de tema y menú */
+.Header-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+/* Light mode */
+body.light .Header{
+    background: rgba(212, 194, 255, 0.6);
+    backdrop-filter: blur(10px);
+}
+body.light .nameLink{
+    color: #6A29FF;
+    transition: color 0.3s ease;
+}
+
+body.light .Menu a {
+    color: #220070;
+    font-weight: medium;
+    transition: color 0.3s ease;
+}
+body.light .Menu a:hover {
+  color: #4A00F5;
+}
+
+body.light .Icon2 {
+    fill: #6A29FF;
+    transition: 0.3s ease, fill 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .Menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(9, 0, 31, 0.95);
+    padding: 1.5rem 2rem;
+    z-index: 10;
+    animation: fadeIn 0.3s ease;
+    text-align: left;
+  }
+
+  .Menu.open {
+    display: flex;
+    align-items: center;
+  }
+
+  .Menu a {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+    color: white;
+  }
+
+  .Container-name-menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .MenuIcon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .Header-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Alinea verticalmente íconos y nombre */
+  .Header {
+    flex-direction: row;
+    padding: 1.5rem 2rem;
+  }
+
+  .Name {
+    font-size: 1.3rem;
+  }
+
+  body.light .Menu {
+    background-color: rgba(212, 194, 255, 0.95);
+  }
+
+  body.light .Menu a {
+    color: #220070;
+  }
+}
+
+
+/* Responsive para móviles */
+@media screen and (max-width: 768px) {
+  .MenuIcon {
+    display: block;
+  }
+
+  .Menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(9, 0, 31, 0.95);
+    padding: 1rem 2rem;
+    z-index: 10;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .Menu.open {
+    display: flex;
+  }
+
+  .Menu a {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    color: white;
+  }
+
+  body.light .Menu {
+    background-color: rgba(212, 194, 255, 0.95);
+  }
+
+  body.light .Menu a {
+    color: #220070;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

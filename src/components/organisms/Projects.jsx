@@ -16,7 +16,7 @@ export const Projects = () => {
             description="DayLu es una aplicación web de lista de tareas que desarrollé como uno de mis primeros proyectos. Permite agregar, marcar como completadas y eliminar tareas. La hice usando Django y Python, y también trabajé el frontend con HTML y CSS usando el sistema de templates del framework."
             image={task}
             stack={['Python', 'Django', 'HTML', 'CSS']}
-            stack2={['Fronted', 'Backend']}
+            stack2={['Frontend', 'Backend']}
         />
     </section>
   )

@@ -25,7 +25,7 @@ export const Start = () => {
     <>
         <div className="container-start" id='start'>
             <div className='container-start-text'>
-                <h1 className='tittle-hello'>Hola!, Soy Luisa</h1>
+                <h1 className='tittle-hello'>Hola! Soy Luisa</h1>
                 <h1 className='tittle-dw animated-gradient'>Desarrolladora Web</h1>
                 <p>Me encanta crear sitios web funcionales y atractivos, enfocados en ofrecer una experiencia única a los usuarios.</p>
                 <div className='container-start-btn'>

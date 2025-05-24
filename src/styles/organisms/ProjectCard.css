@@ -173,6 +173,45 @@ body.light .container-btn-card-2 button{
 }
 
 /* RESPONSIVE DESIGN */
+@media (max-width: 1400px){
+    .card-link{
+        display: flex;
+        align-items: center;
+    }
+    .container-text-img-card{
+        gap: 1rem;
+    }
+    .container-btn-card{
+        gap: 0.5rem;
+    }
+    .container-projects-card img{
+        width: 100%;
+        height: 200px;
+    }
+    .container-card-img-project{
+        width: 100%;
+        height: 250px;
+        padding: 1rem;
+    }
+    .container-text-card{
+        gap:0.2rem;
+    }
+    .tittle-card{
+        font-size: 1.4rem;
+    }
+    .text-card{
+        font-size: 0.9rem;
+    }
+
+    .container-btn-card button{
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+    .container-btn-card-2 button{
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
 
 @media (max-width: 1024px) {
     .container-projects-card{

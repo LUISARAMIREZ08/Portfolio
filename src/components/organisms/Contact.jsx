@@ -1,4 +1,5 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
+import { Alert, Collapse } from '@mui/material'
 import SectionTitle from '../molecules/SectionTitle'
 import Mail from '../../assets/titleIcons/contact.svg?react'  
 import '../../styles/organisms/contact.css'
@@ -6,7 +7,9 @@ import emailjs from '@emailjs/browser'
 
 export const Contact = () => {
     const form = useRef()
-  
+    const [alertOpen, setAlertOpen] = useState(false)
+    const [alertType, setAlertType] = useState('success') 
+    const [alertMessage, setAlertMessage] = useState('')
     const sendEmail = (e) => {
       e.preventDefault()
   
@@ -17,12 +20,22 @@ export const Contact = () => {
         'EU0Q0nmhSDI5adb-d'      // <-- Public key de EmailJS
       )
       .then((result) => {
-          console.log(result.text)
-          alert('Mensaje enviado con éxito ✉️')
-          form.current.reset()
+        console.log(result.text)
+        setAlertType('success')
+        setAlertMessage('Mensaje enviado con éxito')
+        setAlertOpen(true)
+        form.current.reset()
+        setTimeout(() => {
+          setAlertOpen(false)
+        }, 3000)
       }, (error) => {
-          console.log(error.text)
-          alert('Error al enviar mensaje 😞')
+        console.log(error.text)
+        setAlertType('error')
+        setAlertMessage('Error al enviar mensaje')
+        setAlertOpen(true)
+        setTimeout(() => {
+          setAlertOpen(false)
+        }, 3000)
       })
     }
   
@@ -33,6 +46,11 @@ export const Contact = () => {
         Si deseas ponerte en contacto conmigo, puedes escribirme a mi correo electrónico.
       </p>
       <div className='container-contact-form'>
+        <Collapse in={alertOpen}>
+          <Alert severity={alertType} sx={{ mb: 2 }}>
+            {alertMessage}
+          </Alert>
+        </Collapse>
         <form ref={form} onSubmit={sendEmail} className='form-contact'>
           <input type="text" name="name" placeholder="Nombre" className="input-contact" required />
           <input type="email" name="email" placeholder="Correo Electrónico" className="input-contact" required />

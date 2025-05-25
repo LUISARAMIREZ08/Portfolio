@@ -32,7 +32,7 @@ export const Start = () => {
                     <IconButton
                         iconSrc={CV} 
                         label="CV"
-                        onClick={() => window.open('/CV_LuisaRamirez.pdf', '_blank')}
+                        onClick={() => window.open('/Portfolio/CV_LuisaRamirez.pdf', '_blank')}
                     />
                     <IconButton
                         iconSrc={github} 

@@ -86,10 +86,4 @@ body.light .text-card-training {
     .container-training-cards{
         width: 80%;
     }
-    .title-card-training{
-        font-size: 0.8rem;
-    }
-    .text-card-training{
-        font-size: 0.7rem;
-    }
 }

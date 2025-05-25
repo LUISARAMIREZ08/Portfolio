@@ -86,6 +86,17 @@
     background: linear-gradient(to bottom right, #ffffff, #81cc87);
 }
 
+.container-card-img-project-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 2rem;
+    background: linear-gradient(to bottom right, #ffffff, #1f307c);
+}
+
 
 .container-projects-card img{
     width: 90%;
@@ -154,7 +165,7 @@
 .container-btn-card-2 button{
     font-family: 'Poppins', sans-serif;
     background-color: #160047;
-    color: #3B00C2;
+    color: #6A29FF;
     border: none;
     padding: 0.2rem 1rem;
     border-radius: 30px;
@@ -215,6 +226,11 @@ body.light .container-btn-card-2 button{
         height: 250px;
         padding: 1rem;
     }
+    .container-card-img-project-3{
+        width: 100%;
+        height: 250px;
+        padding: 1rem;
+    }
     .container-text-card{
         gap:0.2rem;
     }
@@ -264,6 +280,11 @@ body.light .container-btn-card-2 button{
         height: 200px;
         padding: 1rem;
     }
+    .container-card-img-project-3{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
     .container-text-card{
         gap:0.2rem;
     }
@@ -284,7 +305,7 @@ body.light .container-btn-card-2 button{
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 570px) {
+@media (max-width: 767px) and (min-width: 570px) {
     .container-projects-card{
         width: 80%;
         padding: 1rem;
@@ -312,12 +333,17 @@ body.light .container-btn-card-2 button{
         height: 200px;
         padding: 1rem;
     }
+    .container-card-img-project-3{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
     .container-text-card{
         gap:0.2rem;
     }
 }
 
-@media screen and (max-width: 570px) and (min-width: 480px){
+@media (max-width: 570px) and (min-width: 480px){
     .container-projects-card{
         width: 90%;
         padding: 1rem;
@@ -345,9 +371,14 @@ body.light .container-btn-card-2 button{
         height: 200px;
         padding: 1rem;
     }
+    .container-card-img-project-3{
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
 }
 
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
     .container-projects-card{
         width: 80%;
         padding: 1rem;
@@ -378,6 +409,11 @@ body.light .container-btn-card-2 button{
         padding: 1rem;
     }
     .container-card-img-project-2{
+        width: 95%;
+        height: 180px;
+        padding: 1rem;
+    }
+    .container-card-img-project-3{
         width: 95%;
         height: 180px;
         padding: 1rem;

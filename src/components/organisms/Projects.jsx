@@ -5,12 +5,23 @@ import SectionTitle from '../molecules/SectionTitle'
 import ProjectCard from './ProjectCard'
 import task from '../../assets/images/task.png'
 import VitalFood from '../../assets/images/VitalFood.png'
+import HumanEase from '../../assets/images/HumanEase.png'
 import Project from '../../assets/titleIcons/Projects.svg?react'
 
 export const Projects = () => {
   return (
     <section className='container-projects' id='projects'>
       <SectionTitle Icon={Project} title="Proyectos" />
+        <ProjectCard
+            href="https://github.com/LUISARAMIREZ08/Human_Ease"
+            title="HumanEase"
+            description="Human Ease es una app web para gestionar empleados y procesos de contratación. Mi trabajo fue desarrollar todo el backend con Spring Boot y MySQL, además de integrar el registro e inicio de sesión en Angular usando JWT. Aunque fue un reto porque era mi primera vez usando Spring Boot, fue una gran oportunidad para aprender y mejorar mis habilidades full stack. El proyecto lo trabajamos en equipo, aplicando el marco de trabajo Scrum."
+            image={HumanEase}
+            stack={['Java', 'Spring Boot','MySQL', 'Angular', 'TypeScript']}
+            stack2={['Backend', 'Frontend']}
+            container="container-card-img-project-3"
+            reverse={true}
+        />
         <ProjectCard
             href="https://github.com/LUISARAMIREZ08/app_to_do"
             title="DayLu"

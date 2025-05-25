@@ -6,10 +6,10 @@
     background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
     background-size: 200% 200%;
     animation: gradientMove 4s ease infinite;
-    pointer-events: none; /* Permite hacer clic a través del cursor */
-    transform: translate(-50%, -50%); /* Centra el círculo en el puntero */
-    z-index: 9999; /* Asegura que esté por encima de otros elementos */
-    mix-blend-mode: overlay; /* Opcional: mezcla con el fondo */
+    pointer-events: none; /* Allows clicking through the cursor */
+    transform: translate(-50%, -50%); /* Center the circle on the pointer */
+    z-index: 9999; /* Ensures it is above other elements */
+    mix-blend-mode: overlay; 
   }
   
   @keyframes gradientMove {

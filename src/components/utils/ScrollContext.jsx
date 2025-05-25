@@ -11,7 +11,7 @@ export const ScrollProvider = ({ children }) => {
   const formacionRef = useRef(null);
 
   const scrollToSection = (ref) => {
-    const offset = 80; // Ajusta según la altura de tu navbar
+    const offset = 80; // Adjusts according to the height of the navigation bar.
     window.scrollTo({
       top: ref.current.offsetTop - offset,
       behavior: 'smooth',

@@ -17,7 +17,7 @@ export const Footer = () => {
                     label="GitHub" 
                 />
                 <SocialIcon
-                    href="/Portfolio/CV_LuisaRamirez.pdf" 
+                    href="/CV_LuisaRamirez.pdf" 
                     IconComponent={Cv2} 
                     label="CV"
                 />

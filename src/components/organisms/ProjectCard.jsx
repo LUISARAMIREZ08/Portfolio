@@ -18,18 +18,14 @@ const ProjectCard = ({ title, description, image, stack, stack2, href, container
           <button
             className='btn-toggle-text'
             onClick={(e) => {
-              e.preventDefault() // evita navegación del enlace
+              e.preventDefault()
               toggleText()
             }}
           >
             {showText ? 'Ocultar' : 'Ver descripción'}
           </button>
         </div>
-
-        {/* Botón que solo se muestra en pantallas pequeñas */}
-          
-
-          {/* Texto condicional */}
+        
           <p className={`text-card ${showText ? 'show' : 'hide'}`}>
             <small>{description}</small>
           </p>

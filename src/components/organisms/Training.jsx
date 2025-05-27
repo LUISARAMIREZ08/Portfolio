@@ -10,7 +10,7 @@ export const Training = () => {
             <SectionTitle Icon={School} title="Formación" />
             <div className='container-training-cards'>
                 <SectionTraining 
-                    Title= 'Ingeniería de Sistemas y Computacion'
+                    Title= 'Ingeniería de Sistemas y Computación'
                     School='Universidad Tecnológica de Pereira'
                     Date='2020 - Presente'
                 />
